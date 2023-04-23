@@ -1,4 +1,4 @@
-baseURL = 'http://hugo-quickstart-template.netlify.com'
+baseURL = '/'
 languageCode = 'en-us'
-title = 'Netlify + Hugo Quickstart'
+title = 'Let That Sink Out'
 theme = 'netlify-basic'
