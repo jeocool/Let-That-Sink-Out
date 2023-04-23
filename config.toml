@@ -1,4 +1,4 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'Let That Sink Out'
-theme = 'netlify-basic'
+theme = 'paper'
