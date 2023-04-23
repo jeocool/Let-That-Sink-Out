@@ -1,8 +1,6 @@
 ---
 date: 2023-04-20T04:21:09Z
 ---
-# Let That Sink Out
-
 step 0: sign into Twitter from a desktop browser that supports extensions (Chrome, Edge, Firefox, etc)
 
 step 1: install an extension that autoblocks any Twitter Blue users on sight like [BluesBlocker (Chrome)](https://chrome.google.com/webstore/detail/bluesblocker/dbcfmkldigmecjpjeojbcfbjidmcngfe) or [Blue Blocker (Firefox)](https://addons.mozilla.org/en-US/firefox/addon/blue-blocker/)
