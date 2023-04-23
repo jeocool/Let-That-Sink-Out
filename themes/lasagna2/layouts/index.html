@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+{{ if .Title}}
+	<h1 class="text-2xl font-bold mb-7">{{ .Title }} </h1>
+{{ end }}
+
+<div class="mb-7 single">
+{{ .Content}}
+</div>
+
+<h2 class="text-2xl font-medium mb-5"> Most recent blog posts: </h2>
+
+{{ range first 5 (where (where .Site.RegularPages.ByPublishDate.Reverse "Params.hidden" "ne" "true") "Section" "posts")  }}
+	{{ partial "postpreview.html" . }}
+{{ end }}
+
+{{ end }}

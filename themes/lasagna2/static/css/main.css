@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.single p {
+		@apply mb-6;
+	}
+
+	.single h1, h2, h3, h4, h5, h6 {
+		@apply font-semibold mb-4;
+
+	}
+
+	.single h1 {
+		@apply text-2xl;
+	}
+
+	.single h2 {
+		@apply text-xl;
+	}
+
+	.single h3, h4 {
+		@apply text-lg;
+	}
+
+	.single h5, h6 {
+		@apply text-base italic;
+	}
+
+	.single blockquote {
+		@apply py-1 ml-4 pl-2 lg:pl-4 lg:ml-6 border-l-red-700 border-l-4 mb-6;
+	}
+
+	.single blockquote p {
+		@apply mb-0;
+	}
+
+	.single table {
+		@apply w-full text-base text-left text-slate-900 mb-7 shadow-md;
+	}
+
+	.single thead {
+		@apply text-base text-slate-700 uppercase bg-gray-50;
+	}
+
+	.single th, td {
+		@apply py-3 px-6;
+	}
+
+	.single pre {
+		@apply p-4 text-sm mb-6;
+	}
+
+	.single ul {
+		@apply mb-6 list-disc pl-4;
+	}
+
+	.single ol {
+		@apply mb-6 list-decimal pl-4;
+	}
+
+	.single a {
+		@apply text-cyan-900 hover:underline;
+	}
+
+	.single p code {
+		@apply text-sm font-mono text-slate-900 p-1 bg-gray-100;
+	}
+
+
+}

@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<div class="flex flex-row gap-6 flex-wrap">
+
+ {{ range .Data.Terms.ByCount }}
+
+ <a  href="{{ .Page.Permalink }}" class="text-cyan-900  p-4 border-2 border-cyan-900 drop-shadow-md bg:white hover:bg-slate-100 text-lg">{{ .Page.Title }}</a>
+
+    {{ end }}
+</ul>
+</div>
+{{ end }}

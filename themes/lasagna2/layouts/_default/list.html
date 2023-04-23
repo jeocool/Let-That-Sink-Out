@@ -1,0 +1,18 @@
+{{ define "main" }}
+        
+	<h1 class="text-3xl font-bold mb-8">{{ .Title }}</h1>
+
+	{{ if .Content}}
+	<div class="mb-5">
+	{{ .Content }}
+	</div>
+	{{ end }}
+
+	{{ range where .Paginator.Pages.ByPublishDate.Reverse "Params.hidden" "ne" "true" }}
+	{{ partial "postpreview.html" . }}
+{{ end }}
+
+	{{ partial "pagination.html" .}}
+{{ end }}
+
+

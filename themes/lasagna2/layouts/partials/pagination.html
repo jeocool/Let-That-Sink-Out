@@ -1,0 +1,30 @@
+{{ $pag := $.Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+<nav class="flex flex-row flex-wrap gap-4 justify-center text-lg ">
+    <div>
+        <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" class="{{ if not $pag.HasPrev }} text-black {{else}}text-cyan-900 {{ end }} " aria-label="Previous"><span aria-hidden="true">&laquo;Previous</span></a>
+    </div>
+    {{ $ellipsed := false }}
+    {{ $shouldEllipse := false }}
+    {{ range $pag.Pagers }}
+    {{ $right := sub .TotalPages .PageNumber }}
+    {{ $showNumber := or (le .PageNumber 3) (eq $right 0) }}
+    {{ $showNumber := or $showNumber (and (gt .PageNumber (sub $pag.PageNumber 2)) (lt .PageNumber (add $pag.PageNumber 2)))  }}
+    {{ if $showNumber }}
+        {{ $ellipsed = false }}
+        {{ $shouldEllipse = false }}
+    {{ else }}
+        {{ $shouldEllipse = not $ellipsed }}
+        {{ $ellipsed = true }}
+    {{ end }}
+    {{ if $showNumber }}
+    <div><a class="{{ if eq . $pag }}text-black {{ else }}  text-cyan-900 {{ end }}" href="{{ .URL }}">{{ .PageNumber }}</a></div>
+    {{ else if $shouldEllipse }}
+    <div><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></div>
+    {{ end }}
+    {{ end }}
+    <div>
+    <a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" class=" {{ if not $pag.HasNext }} text-black {{else}} text-cyan-900 {{ end }}" aria-label="Next"><span aria-hidden="true">Next&raquo;</span></a>
+    </div>
+</nav>
+{{ end }}

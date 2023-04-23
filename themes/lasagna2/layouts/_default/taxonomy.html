@@ -1,0 +1,9 @@
+{{ define "main" }}
+            <h1 class="text-3xl font-bold mb-8">Category: {{ .Title }}</h2>
+
+            {{ range .Paginator.Pages }}
+            	{{ partial "postpreview.html" . }}
+           	{{ end }}
+
+{{ end }}
+
