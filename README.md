@@ -1,5 +1,4 @@
 ---
-title: "Let That Sink Out"
 date: 2023-04-20T04:21:09Z
 ---
 # Let That Sink Out
