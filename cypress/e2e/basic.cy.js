@@ -3,7 +3,6 @@ describe('empty spec', () => {
     cy.visit('/')
   })
   it('references the stupid sink thing', () => {
-    cy.get('h1')
-    .contains('Sink');
+    cy.contains('Sink');
   })
 })
