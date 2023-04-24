@@ -14,7 +14,7 @@ step 3: enjoy your newly-enhanced Twitter browsing experience across all devices
 
 ## faq
 
-if there are any "verified users" you actually want to see posts from (like because they have over a million followers and [Elon Musk is horny for false endorsement](https://twitter.com/dril/status/1649919372700565504)), these extensions avoid blocking users you follow by default, so just smash that f'n "Follow" button (you might have to hit "Unblock" first if you weren't following them initially)
+if there are any "verified users" you actually want to see posts from (like because they have over a million followers and [Elon Musk is horny for false endorsement](https://twitter.com/dril/status/1649919372700565504)), these extensions avoid blocking users you follow by default, so if you click "Unblock" and "Follow" on those accounts, seeing *their* posts won't be an issue
 
 ## credit
 
