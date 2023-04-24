@@ -3,6 +3,9 @@ describe('empty spec', () => {
     cy.visit('/')
   })
   it('references the stupid sink thing', () => {
-    cy.contains('Sink');
+    cy.get('img')
+      .should('be.visible')
+      .and('have.prop', 'naturalWidth')
+      .should('be.greaterThan', 0)
   })
 })
