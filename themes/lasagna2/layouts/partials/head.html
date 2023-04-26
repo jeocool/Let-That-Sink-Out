@@ -8,4 +8,10 @@
 {{ $title := print .Site.Title " | " .Title }}
 {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
 <title>{{ $title }}</title>
+<meta property="og:title" content="let that sink out dot com">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="two magic steps that improve Twitter by 100%">
+<meta property="og:image" content="https://letthatsinkout.com/letthatsinkout.png">
+<meta property="og:url" content="https://letthatsinkout.com/">
+<meta name="twitter:card" content="summary_large_image">
 </head>
