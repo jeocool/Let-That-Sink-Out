@@ -12,10 +12,6 @@ step 2: open any post that's gone viral with blusers, like [this post by Bernie 
 
 step 3: enjoy your newly-enhanced Twitter browsing experience across all devices 😁
 
-## faq
-
-if there are any "verified users" you actually want to see posts from (like because they have over a million followers and [Elon Musk is horny for false endorsement](https://twitter.com/dril/status/1649919372700565504)), these extensions avoid blocking users you follow by default, so if you click "Unblock" and "Follow" on those accounts, seeing *their* posts won't be an issue
-
 ## credit
 
 we all did this, together. [suggest changes via GitHub](https://github.com/jeocool/Let-That-Sink-Out)
